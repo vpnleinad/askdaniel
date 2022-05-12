@@ -9,6 +9,6 @@ def hello():
     return "Hello World!"
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
     #portas = process.env.get('PORT', 8080)
     #app.run(host='127.0.0.0', port=portas, debug=False)
