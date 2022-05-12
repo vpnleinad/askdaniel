@@ -1,0 +1,40 @@
+{% extends 'includes/layout.html' %}
+
+
+
+
+{% block body %}
+<main class="container">
+  <div class="bg-light p-5 rounded mt-5">
+    <h1> 🖥️ Answers Job Descriptions 🖥️ ️</h1>
+    <p class="lead">
+      This IA can answers your questions about Daniel Farias. If you have more questions, please visit my <a href="https://danielmellofarias.github.io/cv/">CV</a>
+    </p>
+
+    <h2>Enter with your question...</h2>
+
+    <form class="" action="/job-description" method="post">
+
+      <div class="mb-3">
+        <label class="form-label">Question</label>
+        <input type="text" class="form-control" name="jobDescription" placeholder="eg. Você trabalha com o que?">
+        <div class="form-text">Enter with the question from Daniel Farias.</div>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-lg"> 💃 GET ANSWER</button>
+
+    </form>
+  </div>
+
+
+  <div class="p-3 rounded">
+    <div class="row">
+      <div class="col-lg-12">
+        <h3 class="text-primary">{{prompt}}</h3>
+        <p class="lead">{{openAIAnswer}}</p>
+
+      </div>
+    </div>
+  </div>
+</main>
+{% endblock %}
