@@ -1,14 +1,9 @@
-import flask
-import os, openai
-
+import flask, os, openai
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route("/")
-def hello():
-    return "Hello World!"
+def home_view():
+        return "<h1>Welcome to Flask</h1>"
 
-if __name__ == '__main__':
-    app.run(debug=True)
-    #portas = process.env.get('PORT', 8080)
-    #app.run(host='127.0.0.0', port=portas, debug=False)
