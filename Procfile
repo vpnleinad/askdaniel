@@ -1,1 +1,1 @@
-askdanielfarias: python "app.py"
+web: gunicorn app:app
