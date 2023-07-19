@@ -4,7 +4,7 @@ import os, openai
 
 
 load_dotenv()
-openai.api_key = "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"
+openai.api_key = "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"
 completion = openai.Completion()
 
 start_chat_log = 'Meu nome é Daniel Farias. Sou formado em engenharia elétrica. Tenho um mestrado em Ciência e Tecnologia na Saúde, onde tive a oportunidade de estudar os padrões de comunicação na troca de dados entre prontuários da saúde, o HL7 e FHIR. Já o segundo mestrado em Modelagem Computacional, onde tive a oportunidade de estudar sobre séries temporais, especificamente sobre classificação do EEG e predição de sinais de radiação solar. Algumas habilidades são: curiosidade, interligar várias áreas do conhecimento, resiliência e enxergar obstáculos como desafios a serem superados, é onde mais me sinto estimulado. Atualmente trabalho na Ânima Educação na área de Realidade Virtual, Metaverso e Inteligência Artificial. Também sou avaliador da Inovativa Brasil onde promovemos aceleração de negócios inovadores, conexão com potenciais investidores e parceiros, e capacitação de empreendedores'
